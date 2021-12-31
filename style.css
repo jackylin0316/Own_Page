@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 40px;
+    /* google font */
+    font-family: Licorice;
+
+}
+
+
+
+
+a{
+    text-decoration: none;
+
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.box1{
+    border:3px white none;
+    background-color: bisque;
+    border-radius: 10px;
+
+}
+
+/* hero */
+#hero{
+    background-image: url(img/me.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+
+#hero::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: antiquewhite;
+    opacity: .3;
+}
