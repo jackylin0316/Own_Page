@@ -7,6 +7,10 @@
 }
 
 
+/* #hero .other{
+    color: red;
+} */
+
 html{
     font-size: 20px;
     /* google font */
@@ -28,6 +32,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 
@@ -46,21 +51,23 @@ a{
     color:red;
 
 } */
-#hero .list a:hover{
-    color:#005757 
 
-}
+
+
 
 
 /* hero */
 #hero{
     background-image: url(img/IMG_1.png);
-    background-repeat:no-repeat;
-    background-size: cover;
-    background-position: top center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
     position: relative;
+    background-color: whitesmoke;
     z-index: 1;
 }
+
+
 
 #hero::after{
     content:'';
@@ -76,19 +83,22 @@ a{
 
 #hero .hero{
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 50px;
+    /* margin: 1px; */
+    
+    padding: 0 15px;
     justify-content: flex-start;
 }
 
 #hero h1{
     display: block;
     width: fit-content;
+    
     font-size: 4rem;
     position: relative;
     color: transparent;
     animation: text_reveal .5s ease forwards ;
     animation-delay: 1s;
+    
 }
 
 #hero h1:nth-child(1){
@@ -107,7 +117,8 @@ a{
     left: 0;
     height: 100%;
     width: 0;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
+    background-color: transparent;
     animation: text_reveal_box 1s ease;
     animation-delay: .3s;
 }
@@ -122,28 +133,36 @@ a{
     animation-delay: 2.5s;
 }
 
+
+
+#hero .right{
+    margin-right: 100px;
+    color: yellow;
+}
+
 #hero .cta{
-    
-    
+    font-size: 3rem;
+    position:absolute;
+    right: 60px;
+    top: 340px;
     border:2px white none;
-    background-color: bisque;
     border-radius: 10px;
+    background-color: gray;
     opacity: .7;
     display: inline-block;
-    padding: 2px;
-    color: black;
-    /* background-color: transparent; */
-    /* border: 2px solid crimson; */
-    font-size: 2rem;
+    /* padding-top: 10px; */
+    color: whitesmoke;
     text-decoration: none;
     text-decoration-style: none;
     text-transform: uppercase;
     letter-spacing: .1rem;
-    margin-top: 30px;
-    /* margin-left: 75px; */
+    /* margin-top: 40px;  */
     transition: .3s ease background-color;
     transition-property: background-color, color;
-} 
+}  
+
+
+
 
 #hero .cta:hover{
     color: white;
