@@ -239,9 +239,8 @@ a{
 }
 
 #services .service-item{
-    content:"";
-    background-image: url('img/service_item.jpg');
-    opacity:0.4;
+    background-image: url('img/item.png');
+    /* opacity:0.4; */
     flex-basis: 80%;
     display: flex;
     align-items: flex-start;
@@ -257,6 +256,36 @@ a{
 
 
 
+/* #service .service-item{ 
+    background-image: url('img/service_item.jpg');
+    background-size: cover;
+    flex-direction: column;
+    flex-basis: 80%;
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
+    margin: 10px 5%;
+    border-radius: 10px;
+    
+}
+
+#service.service-item::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.6);
+} */
+
+
+
+
 #services .project_link{
     color: black;
     border:3px dashed silver;
@@ -268,23 +297,10 @@ a{
     
 }
 
-/* .container::before{
-    content:"";
-    background-image: url('car-image.jpg');
-    opacity:0.5;
-    position:absolute;
-    top:0;
-    bottom:0;
-    right:0;
-    left:0;
-    width:auto;
-    height:auto;
-    z-index:-3;
-  }
-  
-  
-  .container h1{
-    text-align:center;
-    font-size:49px;
-  } */
+
+#services .project_link:hover{
+    color:red;
+    background-color:#E0E0E0;
+}
+
   
