@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Licorice&family=Qwitcher+Grypen:wght@700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Licorice&family=Qwitcher+Grypen:wght@700&family=Source+Code+Pro:ital@1&display=swap');
 
 *{
     padding: 0;
@@ -22,6 +23,11 @@ html{
 }
 
 
+img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+}
 
 
 a{
@@ -210,7 +216,7 @@ a{
 
 }
 
-#services .section-title{
+/* #services .section-title{
     font-size:  4rem;
     font-weight: 300;
     color: black;
@@ -218,7 +224,15 @@ a{
     text-transform: uppercase;
     letter-spacing: .2rem;
     text-align: center;
-
+} */
+.section-title{
+    font-size:  4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
 }
 
 #services .service-top p{
@@ -236,10 +250,11 @@ a{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    marigin-top: 50px;
 }
 
 #services .service-item{
-    background-image: url('img/item.png');
+    background-image: url('img/service_item.jpg');
     /* opacity:0.4; */
     flex-basis: 80%;
     display: flex;
@@ -250,52 +265,84 @@ a{
     padding: 30px;
     margin: 10px 5%;
     border-radius: 10px;
-}
+    position: relative; /* or the after wont work */
+    z-index: 1;
+    font-family: 'Dancing Script', cursive;
+    color: #B87070;
+    overflow: hidden;
+    /* write it here */
+    
 
-
-
-
-
-/* #service .service-item{ 
-    background-image: url('img/service_item.jpg');
-    background-size: cover;
-    flex-direction: column;
-    flex-basis: 80%;
-    position: relative; 
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 30px;
-    margin: 10px 5%;
-    border-radius: 10px;
+    
     
 }
 
-#service.service-item::before {
-    content: "";
+/* 我們將圖片的 position 設定為 absolute，z-index 設為 1，所以圖片會將文字蓋住，如果將 z-index 設為 -1，則圖片會跑到文字後方 */
+
+#services .service-item::after{
+    content:'';
     position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(0,0,0,0.6);
-} */
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #E0E0E0;
+    opacity: .6;
+    z-index:  -1;
+    
+    
+}
+
+
+
+#services .service-item .date{
+    font-size: 20px;
+    color:#FF7575;
+    margin-top: 2px;
+    /* text-transform: uppercase; */
+}
+
+#services .service-item .icon{
+
+    
+    /* float: left;   */
+    height: 50px;
+    width: 50px;
+    margin-bottom: 20px;
+}
 
 
 
 
-#services .project_link{
-    color: black;
-    border:3px dashed silver;
+#services .service-item h2{
+    
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#services .service-item p{
+    
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+
+
+
+#services .service-item a{
+    /* color: black; */
+    color: #B87070;
+    border:3px dashed #ADADAD;
     border-radius: 10px;
     padding:5px;
     font-size: 30px;
-    margin-top: 40px;
-    opacity: 1;
-    
+    margin-top: 150px;
 }
+
+
+
+#services .service-item:
 
 
 #services .project_link:hover{
@@ -303,4 +350,92 @@ a{
     background-color:#E0E0E0;
 }
 
-  
+
+/* projects Section*/
+#projects .projects{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+    font-family: 'Dancing Script', cursive;
+}
+
+#projects .projects-header h1{
+    margin-bottom: 50px;
+}
+
+#projects .all-projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#projects .project-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin :20px auto;
+    overflow: hidden;
+    /* border: 3px solid red; */
+    border-radius: 10px;   
+}
+
+#projects .project-info{
+    padding: 30px;
+    flex-basis: 50%;
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column; 
+    background-color: #9D9D9D;
+    background-image: linear-gradient(60deg, #CF9E9E 0%, 	#CF9E9E 100%);
+    color:white;
+
+}
+
+#projects .project-info h1{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+#projects .project-info h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 10px;
+    
+}
+
+#projects .project-info p{
+    
+}
+
+#projects .project-item .project-img{
+    
+    /* flex-basis: 50%; */
+    
+    /* overflow: hidden; */
+    
+    /* padding: 150px;
+    margin-top: -120px; */
+    
+    
+}
+
+
+
+
+
+/* #projects .section-title{
+    font-size:  4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+
+} */
