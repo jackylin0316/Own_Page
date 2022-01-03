@@ -1,7 +1,10 @@
 from PIL import Image
-img = Image.open('./img/service_item.png')
-img.putalpha(64)  # Half alpha; alpha argument must be an int
-img.save('item.png')
+image = Image.open('img/TSLA_1.jpg')
+print(image.size)
+image.show()
+
+# image.thumbnail((600,600))
+# image.save('first_1.jpg')
 
 
 

@@ -270,6 +270,7 @@ a{
     font-family: 'Dancing Script', cursive;
     color: #B87070;
     overflow: hidden;
+    max-width: 800px;
     /* write it here */
     
 
@@ -376,10 +377,11 @@ a{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     margin :20px auto;
     overflow: hidden;
-    /* border: 3px solid red; */
+    border: 3px solid #8E8E8E;
+    max-width: 800px;
     border-radius: 10px;   
 }
 
@@ -415,14 +417,34 @@ a{
 
 #projects .project-item .project-img{
     
-    /* flex-basis: 50%; */
+    flex-basis: 50%;
+    width: 100%;
+    overflow: hidden;
     
-    /* overflow: hidden; */
+    /* padding: 150px; */
+    /* margin-top: 20px; */
+    position: relative; /* in order for after to work */
     
-    /* padding: 150px;
-    margin-top: -120px; */
+}
+
+#projects .project-img::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color:#D0D0D0;
+    opacity: .3;
+
+}
+#projects .project-item .project-img{
+    transition: .3s ease transform;
+}
+#projects .project-item .project-img:hover{
     
-    
+    transform: scale(.9);
+
 }
 
 
