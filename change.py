@@ -1,10 +1,10 @@
 from PIL import Image
-image = Image.open('img/TSLA_1.jpg')
-print(image.size)
-image.show()
+image = Image.open('img/first.jpg')
+# print(image.size)
+# image.show()
 
-# image.thumbnail((600,600))
-# image.save('first_1.jpg')
+image.thumbnail((300,300))
+image.save('first_1.jpg')
 
 
 
