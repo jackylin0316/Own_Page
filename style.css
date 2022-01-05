@@ -307,6 +307,7 @@ a {
   flex-direction: column;
   max-width: 1000px;
   /* max-height: 800px; */
+
   margin: 0 auto;
   padding: 100px 0;
   font-family: "Dancing Script", cursive;
@@ -398,11 +399,51 @@ a {
 }
 
 /* about */
-
+#about {
+}
 #about .about {
-  flex-direction: column;
   text-align: center;
-  max-width: 800px;
+  max-width: 600px;
+
   margin: 0 auto;
-  padding: 100px 20px;
+  /* padding: 500px 20px; */
+  /* border: 3px solid red; */
+}
+
+#about .about-img {
+  box-shadow: 10px 10px 5px #cccccc;
+  width: 250px;
+  height: 200px;
+}
+
+#about .about-img a {
+  margin-top: 20px;
+  font-size: 10px;
+  color: burlywood;
+}
+
+#about .col-left {
+  margin-right: 30px;
+}
+
+#about .col-right h2 {
+  padding-top: 0;
+  margin-top: 0;
+}
+#about .col-right p {
+  color: red;
+  font-family: monospace;
+  margin: 30px auto;
+  /* 上下/ 左右 */
+  font-size: 15px;
+  opacity: 0.7;
+}
+
+#about .col-right a {
+  border: 3px dashed whitesmoke;
+  margin-top: 20px;
+  color: gray;
+  padding: 8px;
+  border-radius: 10px;
+  opacity: 0.8;
 }
