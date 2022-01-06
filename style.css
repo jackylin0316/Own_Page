@@ -360,12 +360,14 @@ a {
   font-size: 1.2rem;
   font-weight: 500;
   margin-top: 10px;
+  color: grey;
 }
 
 #projects .project-info p {
   font-size: 0.7rem;
   font-family: monospace;
   margin-top: 3px;
+  color: grey;
 }
 
 #projects .project-item .project-img {
