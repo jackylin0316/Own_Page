@@ -351,6 +351,16 @@ a {
   color: white;
 }
 
+#projects .projects-header p {
+  font-size: 1.4rem;
+  margin-top: 5px;
+  line-height: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  float: center;
+  font-family: "Dancing Script", cursive;
+}
+
 #projects .project-info h1 {
   font-size: 1.5rem;
   font-weight: 500;
