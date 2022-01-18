@@ -307,6 +307,7 @@ a {
   flex-direction: column;
   max-width: 1000px;
   /* max-height: 800px; */
+  /* height: 300px; */
 
   margin: 0 auto;
   padding: 100px 0;
@@ -408,6 +409,18 @@ a {
 }
 #projects .project-item .project-img:hover {
   transform: scale(0.9);
+}
+
+#projects .project-info .a_ {
+  margin-top: 5px;
+}
+
+#projects .project-info a {
+  margin-bottom: 5px;
+  border-bottom: 3px dashed gold;
+  font-size: 20px;
+  color: brown;
+  opacity: 0.6;
 }
 
 /* about */
